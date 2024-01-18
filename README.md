@@ -17,3 +17,26 @@ openai.error.RateLimitError: You exceeded your current quota, please check your 
 ### Langchain changes?  or Pinecone?
 
 https://api.python.langchain.com/en/stable/vectorstores/langchain_community.vectorstores.pinecone.Pinecone.html?highlight=similarity_search_with_score#langchain_community.vectorstores.pinecone.Pinecone.similarity_search_with_score
+
+
+### Updated Query
+
+````
+
+PythonProcessor[type=QueryPinecone, id=faa3b955-018c-1000-96b9-58abe3b8ddbd] Failed to transform FlowFile[filename=6ac513e7-5ad9-481e-b383-70bb5f5e6021]: py4j.Py4JException: An exception was raised by the Python Proxy. Return Message: Traceback (most recent call last):
+  File "/Users/tspann/Downloads/servers/nifi-2.0.0-M1/python/framework/py4j/java_gateway.py", line 2466, in _call_proxy
+    return_value = getattr(self.pool[obj_id], method)(*params)
+  File "/Users/tspann/Downloads/servers/nifi-2.0.0-M1/python/api/nifiapi/flowfiletransform.py", line 33, in transformFlowFile
+    return self.transform(self.process_context, flowfile)
+  File "/Users/tspann/Downloads/servers/nifi-2.0.0-M1/python/extensions/vectorstores/QueryPinecone.py", line 144, in transform
+    results = vectorstore.similarity_search_with_score(query, k=num_results)
+  File "/Users/tspann/Downloads/servers/nifi-2.0.0-M1/./work/python/extensions/QueryPinecone/2.0.0-SNAPSHOT/langchain/vectorstores/pinecone.py", line 171, in similarity_search_with_score
+    return self.similarity_search_by_vector_with_score(
+  File "/Users/tspann/Downloads/servers/nifi-2.0.0-M1/./work/python/extensions/QueryPinecone/2.0.0-SNAPSHOT/langchain/vectorstores/pinecone.py", line 188, in similarity_search_by_vector_with_score
+    results = self._index.query(
+  File "/Users/tspann/Downloads/servers/nifi-2.0.0-M1/./work/python/extensions/QueryPinecone/2.0.0-SNAPSHOT/pinecone/utils/error_handling.py", line 10, in inner_func
+    return func(*args, **kwargs)
+TypeError: Index.query() got multiple values for argument 'top_k'
+
+
+`````
