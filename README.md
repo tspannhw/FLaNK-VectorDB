@@ -1,6 +1,7 @@
 # FLaNK-VectorDB
 NiFi and Vector Databases
 
+https://issues.apache.org/jira/browse/NIFI-12636
 
 ### need credits for openai
 
@@ -12,6 +13,8 @@ NiFi and Vector Databases
 openai.error.RateLimitError: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
 
 ````
+
+### Got some OpenAI from Pierre
 
 
 ### Langchain changes?  or Pinecone?
