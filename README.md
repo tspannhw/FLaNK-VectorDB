@@ -12,3 +12,8 @@ NiFi and Vector Databases
 openai.error.RateLimitError: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
 
 ````
+
+
+### Langchain changes?  or Pinecone?
+
+https://api.python.langchain.com/en/stable/vectorstores/langchain_community.vectorstores.pinecone.Pinecone.html?highlight=similarity_search_with_score#langchain_community.vectorstores.pinecone.Pinecone.similarity_search_with_score
