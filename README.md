@@ -44,4 +44,9 @@ TypeError: Index.query() got multiple values for argument 'top_k'
 
 Upgrade langchain
 
+Clean out __pycache__
+Clean out work/python
+Restart NiFi
+
 pip3.10 install -r requirements.txt --user -U
+
