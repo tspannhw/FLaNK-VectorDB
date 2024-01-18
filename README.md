@@ -40,3 +40,8 @@ TypeError: Index.query() got multiple values for argument 'top_k'
 
 
 `````
+
+
+Upgrade langchain
+
+pip3.10 install -r requirements.txt --user -U
